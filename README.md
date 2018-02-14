@@ -4,7 +4,7 @@
     to a section element in your HTML with an id of "planets".
     Use string templates to construct the DOM elements.
 
-    Use the map method to create a new array where the 
+  - Use the map method to create a new array where the 
     first letter of each planet is capitalized. Use the
     `toUpperCase()` method on strings.
 
