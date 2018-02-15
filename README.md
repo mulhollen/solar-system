@@ -10,10 +10,10 @@
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 
-    Use the filter method to create a new array that
+  - Use the filter method to create a new array that
     contains planets with the letter 'e'. Use the `includes()`
     method on strings.
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 
-    Use the reduce method to create a sentence from the words in the following array
+ -  Use the reduce method to create a sentence from the words in the following      array

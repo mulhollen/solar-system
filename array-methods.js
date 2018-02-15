@@ -42,15 +42,30 @@ const planetsMap = planets.map(w => w.charAt(0).toUpperCase() + w.slice(1));
 planetsTres.innerHTML = planetsMap;
 console.log("planets map", planetsMap);
 
+//  filter
+planetFour = document.getElementById("planetFour");
+const planetsFilter = [];
 
-/*
-    Use the filter method to create a new array that
-    contains planets with the letter 'e'. Use the `includes()`
-    method on strings.
+function filteredArray (array){
+    array.forEach(element => {
+        if (element.includes("e")){
+            planetsFilter.push(element);
+            planetFour.innerHTML += ` ${element}`;
+        }
+    });
+}
 
-    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
-*/
+console.log("includes e array", planetsFilter);
 
+filteredArray(planets);
 
 // Use the reduce method to create a sentence from the words in the following array
-const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+const sentenceDiv = document.getElementById("sentence");
+const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"];
+
+
+const sentence = words.reduce(function(a, b){
+return a + " " + b;
+} );
+
+sentenceDiv.innerHTML = sentence;
